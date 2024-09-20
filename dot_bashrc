@@ -6,3 +6,4 @@ export PATH="$HOME/.jbang/bin:$PATH"
 export PATH="/Users/hsin/.rd/bin:$PATH"
 ### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
 
+
