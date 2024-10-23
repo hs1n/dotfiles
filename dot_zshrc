@@ -25,7 +25,7 @@ source $ZSH/oh-my-zsh.sh
 # removes user@hostname from agnoster prompt
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)"
+    prompt_segment black default "%(!.%{%F{yellow}%}.)"
   fi
 }
 
@@ -67,15 +67,11 @@ export PATH="/Users/hsin/.rd/bin:$PATH"
 # ls
 TREE_IGNORE="cache|log|logs|node_modules|vendor"
 
-alias ls=' exa --group-directories-first'
+alias ls=' eza'
 alias la=' ls -a'
-alias ll=' ls --git -l'
+alias ll=' ls -l'
 alias lt=' ls --tree -D -L 2 -I ${TREE_IGNORE}'
 alias ltt=' ls --tree -D -L 3 -I ${TREE_IGNORE}'
 alias lttt=' ls --tree -D -L 4 -I ${TREE_IGNORE}'
 alias ltttt=' ls --tree -D -L 5 -I ${TREE_IGNORE}'
 #
-#
-#
-#
-eval "$(starship init zsh)"
